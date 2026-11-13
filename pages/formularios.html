@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="../css/template.css" />
+    <style>
+      form {
+        display: grid;
+        max-width: 300px;
+        margin: 0 auto;
+        border: 1px solid orangered;
+        border-radius: 5px;
+        padding: 20px;
+        background-color:rgb(248, 187, 164);
+      }
+      label {
+        color: crimson;
+        margin-bottom: 5px;
+      }
+      input {
+        margin-bottom: 10px;
+        padding: 7px;
+        background-color: beige;
+        outline: none;
+        border: 1px solid orangered;
+      }
+      input:focus {
+        background-color: white;
+      }
+      button {
+        background-color:chocolate;
+        padding: 10px;
+        border: 1px solid chocolate;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        border-radius: 7px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color:rgb(230, 114, 32);
+        color: yellow;
+        box-shadow: 5px 5px 8px rgba(149, 81, 57, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+        <li><a href="paragrafos.html">Parágrafos</a></li>
+        <li><a href="divs.html">Divs</a></li>
+        <li><a href="tabelas.html">Tabelas</a></li>
+      </ul>
+    </header>
+    <h1 id="topo">Formulários</h1>
+    <div id="conteudo">
+      <form>
+        <label for="usuario">Usuário</label>
+        <input id="usuario" name="usuario" type="text" placeholder="Usuário">
+
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Senha">
+
+        <button>Logar</button>
+      </form>
+    </div>
+  </body>
+</html>

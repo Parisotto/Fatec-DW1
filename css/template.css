@@ -1,6 +1,7 @@
 body {
   background-color: cornsilk;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 70px;
 }
 
 #topo {
@@ -17,12 +18,25 @@ body {
   border-radius: 5px;
   background-color: bisque; 
   min-height: 100px;
-  padding: 20px; 
+  padding: 20px;
+  position: relative; 
+}
+
+header {
+  position: fixed;
+  top:0px;
+  left: 0px;
+  background-color: bisque;
+  width: 100%;
+  box-shadow: 0 5px 8px rgba(210,105,30,.4);
+  border-bottom: 1px solid chocolate;
+  z-index: 10;
 }
 
 header ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   padding: 0;
   gap: 15px;
 }
